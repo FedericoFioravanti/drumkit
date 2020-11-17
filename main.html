@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
         
 #drum a {
@@ -27,52 +26,69 @@
   overflow: hidden;
 }
 
-.game-square > div {
-  width: 100%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-}
-        
-.square-0 {
-  background-color: aqua;
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.square-1 {
-  background-color: bisque;
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
 }
 
-.square-2 {
-  background-color: blue;
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.square-3 {
-  background-color: blueviolet;
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
 }
 
-.square-4 {
-  background-color: brown;
+.info:hover {
+  background: #2196F3;
+  color: white;
 }
 
-.square-5 {
-  background-color: cadetblue;
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
 }
 
-.square-6 {
-  background-color: chartreuse;
+.warning:hover {
+  background: #ff9800;
+  color: white;
 }
 
-.square-7 {
-  background-color: chocolate;
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red;
 }
 
-.square-8 {
-  background-color: coral;
+.danger:hover {
+  background: #f44336;
+  color: white;
 }
 
-.square-9 {
-  background-color: cornflowerblue;
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
 }
+
+.default:hover {
+  background: #e7e7e7;
+}       
+
         
     </style>
     
@@ -82,14 +98,14 @@
     <h1>Druw Berrimore</h1>
    
 <div id="drum">
-      <a href="#" onclick="playSound('kick1'); return false;">kick1</a>
-      <a href="#" onclick="playSound('kick2'); return false;">kick2</a>
-      <a href="#" onclick="playSound('hihat1'); return false;">hihat1</a>
-      <a href="#" onclick="playSound('hihat2');">hihat2</a>
-      <a href="#" onclick="playSound('hihat3');">hihat3</a>
-      <a href="#" onclick="playSound('wclap');">wclap</a>
-      <a href="#" onclick="playSound('shaker');">shaker</a>
-      <a href="#" onclick="playSound('voice');">voice</a>
+      <button class="btn" href="#" onclick="playSound('kick1'); return false;">KICK</button>
+      <button class="btn" href="#" onclick="playSound('kick2'); return false;">KICK</button>
+      <button class="btn" href="#" onclick="playSound('hihat1'); return false;">HI HAT</button>
+      <button class="btn" href="#" onclick="playSound('hihat2');">HI HAT</button>
+      <button class="btn" href="#" onclick="playSound('hihat3');">HI HAT</button>
+      <button class="btn" href="#" onclick="playSound('wclap');">W CLAP</button>
+      <button class="btn" href="#" onclick="playSound('shaker');">SHAKER</button>
+      <button class="btn" href="#" onclick="playSound('voice');">VOICE</button>
 </div>
 
 
